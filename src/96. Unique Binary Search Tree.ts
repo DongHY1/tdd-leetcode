@@ -1,8 +1,8 @@
 export function numTrees(n: number): number {
-  //numTrees[4] = numTrees[0]+numTrees[3] 
-  //numTrees[1]+numTrees[2]+
-  //numTrees[2]+numTrees[1]+
-  //numTrees[3]+numTrees[0]
+  //numTrees[4] = numTrees[0]*numTrees[3]
+  //numTrees[1]*numTrees[2]+
+  //numTrees[2]*numTrees[1]+
+  //numTrees[3]*numTrees[0]
   const cache: number[] = [];
   const dfs = (n: number): number => {
     if (n === 1) return n;
@@ -16,6 +16,5 @@ export function numTrees(n: number): number {
     cache[n] = totalCount;
     return totalCount;
   };
-
   return dfs(n);
 }
