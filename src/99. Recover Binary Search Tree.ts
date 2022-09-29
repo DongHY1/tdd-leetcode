@@ -1,13 +1,29 @@
 import { TreeNode } from './common/TreeNode';
 type Node = TreeNode | null;
-let prev: Node = null,
-  first: Node = null,
-  second: Node = null;
 export function recoverTree(root: Node): Node {
   // Resetting values for subsequent executions
-  prev = null;
-  first = null;
-  second = null;
+  let prev: Node = null,
+    first: Node = null,
+    second: Node = null;
+  function inOrder(root: Node) {
+    if (!root) return;
+    inOrder(root.left);
+    if (prev == null) {
+      prev = root;
+    } else {
+      if (prev.val > root.val) {
+        // y取小值
+        second = root;
+        if (first == null) {
+          // x取大值
+          first = prev;
+        }
+      }
+      prev = root;
+    }
+    prev = root;
+    inOrder(root.right);
+  }
 
   inOrder(root);
   // use ! to avoid ts warn
@@ -16,15 +32,4 @@ export function recoverTree(root: Node): Node {
   first!.val = second!.val;
   second!.val = temp;
   return root;
-}
-
-function inOrder(root: Node) {
-  if (!root) return;
-  inOrder(root.left);
-  if (prev !== null && prev.val > root.val) {
-    if (first === null) first = prev;
-    second = root;
-  }
-  prev = root;
-  inOrder(root.right);
 }
