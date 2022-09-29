@@ -26,4 +26,12 @@ describe('', () => {
     );
     expect(isValidBST(node)).toEqual(false);
   });
+  it('give a equal BST Tree', () => {
+    const node = new TreeNode(
+      5,
+      new TreeNode(5, null, null),
+      new TreeNode(5, null, null)
+    );
+    expect(isValidBST(node)).toEqual(false);
+  });
 });
