@@ -1,8 +1,8 @@
 import {
   inorderTraversal,
   inorderTraversal_1,
-} from '../94.Binary_Tree_Inorder_Traversal';
-import { TreeNode } from '../common/TreeNode';
+} from '../../Tree/94.Binary_Tree_Inorder_Traversal';
+import { TreeNode } from '../../common/TreeNode';
 import { describe, it, expect } from 'vitest';
 describe('94', () => {
   it('return root -> left -> right', () => {

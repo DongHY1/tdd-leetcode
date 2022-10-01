@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
-import { TreeNode } from './common/TreeNode';
+import { TreeNode } from '../common/TreeNode';
 interface IMap {
   [key: number]: number;
 }
