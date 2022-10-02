@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { TreeNode } from '../common/TreeNode';
-import { isValidBST } from '../98. Validate Binary Search Tree';
+import { TreeNode } from '../../common/TreeNode';
+import { isValidBST } from '../../Tree/98. Validate Binary Search Tree';
 describe('', () => {
   it('null', () => {
     expect(isValidBST(null)).toEqual(true);

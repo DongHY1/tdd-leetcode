@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { recoverTree } from '../99. Recover Binary Search Tree';
-import { TreeNode } from '../common/TreeNode';
+import { recoverTree } from '../../Tree/99. Recover Binary Search Tree';
+import { TreeNode } from '../../common/TreeNode';
 describe('', () => {
   it('', () => {
     expect(1).toBe(1);

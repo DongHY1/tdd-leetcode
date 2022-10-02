@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { TreeNode } from '../common/TreeNode';
-import { levelOrder } from '../102. Binary Tree Level Order Traversal';
+import { TreeNode } from '../../common/TreeNode';
+import { levelOrder } from '../../Tree/102. Binary Tree Level Order Traversal';
 describe('', () => {
   it('null', () => {
     expect(levelOrder(null)).toEqual([]);

@@ -1,4 +1,4 @@
-import { numTrees } from '../96. Unique Binary Search Tree';
+import { numTrees } from '../../Tree/96. Unique Binary Search Tree';
 import { describe, it, expect } from 'vitest';
 describe('tree', () => {
   it('pass zero return zero', () => {

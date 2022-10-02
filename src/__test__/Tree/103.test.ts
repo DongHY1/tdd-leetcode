@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { TreeNode } from '../common/TreeNode';
-import { zigzagLevelOrder } from '../103. Binary Tree Zigzag Level Order Traversal';
+import { TreeNode } from '../../common/TreeNode';
+import { zigzagLevelOrder } from '../../Tree/103. Binary Tree Zigzag Level Order Traversal';
 describe('', () => {
   it('null', () => {
     expect(zigzagLevelOrder(null)).toEqual([]);

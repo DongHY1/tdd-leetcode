@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { TreeNode } from '../common/TreeNode';
-import { buildTree } from '../106. Construct Binary Tree from Inorder and Postorder Traversal';
+import { TreeNode } from '../../common/TreeNode';
+import { buildTree } from '../../Tree/106. Construct Binary Tree from Inorder and Postorder Traversal';
 describe('106', () => {
   it('pass null', () => {
     expect(buildTree([], [])).toBe(null);
