@@ -1,4 +1,4 @@
-import { TreeNode } from './common/TreeNode';
+import { TreeNode } from '../common/TreeNode';
 export function zigzagLevelOrder(root: TreeNode | null): number[][] {
   let res: number[][] = [];
   let flag = true;
@@ -23,4 +23,3 @@ export function zigzagLevelOrder(root: TreeNode | null): number[][] {
   }
   return res;
 }
-

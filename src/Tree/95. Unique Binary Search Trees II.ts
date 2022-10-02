@@ -1,4 +1,4 @@
-import { TreeNode } from './common/TreeNode';
+import { TreeNode } from '../common/TreeNode';
 export function generateTrees(n: number): Array<TreeNode | null> {
   const dfs = (start: number, end: number): Array<TreeNode | null> => {
     let res: Array<TreeNode | null> = [];

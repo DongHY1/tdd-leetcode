@@ -1,4 +1,4 @@
-import { TreeNode } from './common/TreeNode';
+import { TreeNode } from '../common/TreeNode';
 export function levelOrder(root: TreeNode | null): number[][] {
   let res: number[][] = [];
   if (root === null) return res;

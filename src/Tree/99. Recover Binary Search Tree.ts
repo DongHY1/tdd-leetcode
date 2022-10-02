@@ -1,4 +1,4 @@
-import { TreeNode } from './common/TreeNode';
+import { TreeNode } from '../common/TreeNode';
 type Node = TreeNode | null;
 export function recoverTree(root: Node): Node {
   // Resetting values for subsequent executions
