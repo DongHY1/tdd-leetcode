@@ -1,4 +1,4 @@
 import { ListNode } from './ListNode';
 import { TreeNode } from './TreeNode';
-
-export { ListNode, TreeNode };
+import { TreeNode as Node } from './Node';
+export { ListNode, TreeNode, Node };
